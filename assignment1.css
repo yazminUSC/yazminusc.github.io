@@ -1,0 +1,252 @@
+body {
+    width: 1200px; 
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+ /* CSS for the columns */
+.column-3 {
+    float: left;
+    width: 28%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+  .column-5 {
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* CSS for the feature columns*/
+  .features {
+        content: "";
+        display: table;
+        clear: both;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+  }
+  .feature {
+    float: left;
+    width: 28%; 
+    margin-right: 3%;
+    box-sizing: border-box;
+  }
+  .feature-body{
+    color:#999999;
+    font-size: small;
+  }
+  /*CSS for the nav bar*/
+  ul {
+    list-style-type:armenian;
+    margin: 0;
+    overflow: hidden;
+    color:#999999;
+    font-size: small;
+  }
+  li {
+    float: right;
+    display: block;
+    padding: 20px;
+  }
+.menu{
+    color: #333333;
+    font-size: 1.2em;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+}
+/*Do not wait section */
+.dontwait-section{
+    background-image: url('lawyer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+  }
+.dontwaitstring2{
+    color: #ffd700;
+}
+.dontwait-box{
+    background-color: #1a3c5f;
+    width: 20% ;
+    padding: 40px;
+    margin-left: 15%;
+    color: white;
+    max-width: 500px;
+}
+.dontwait-box h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.dontwait-box p {
+    margin-bottom: 20px;
+}
+.dontwait-box input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.dontwait-box button {
+    background-color: #ffd700;
+    color: #1a3c5f;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+/*CSS for testimonial section*/
+.testimonial {
+    background-color: #f3f3f3;
+    align-items: center;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-family: sans-serif;
+}
+.testimonial-string{
+    font-weight: lighter;
+}
+.highlight-signoff{
+    font-weight: bold;
+    color: #333333; 
+}
+.testimonial-signoff{
+   color:#999999;
+   font-weight: 100;
+   font-size: small;
+}
+/*Pricing section*/
+.pricing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('glasses.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.3;
+  z-index: -1;
+  filter: grayscale(100%);
+}
+
+.pricing {
+  position: relative;
+  padding: 50px;
+  margin-bottom: 100px;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 15%;
+}
+
+.price-box{
+  font-family: sans-serif;
+  margin: 0 2%;
+  padding: 50px;
+  background-color: white;
+  background-image: 
+    linear-gradient(0deg, transparent 49%, #dfdfdf 49%, #dfdfdf 51%, transparent 51%),
+    linear-gradient(90deg, transparent 49%, #dfdfdf 49%, #dfdfdf 51%, transparent 51%),
+    linear-gradient(45deg, transparent 49%, #dfdfdf 49%, #dfdfdf 51%, transparent 51%),
+    linear-gradient(88deg, transparent 49%, #dfdfdf 49%, #dfdfdf 51%, transparent 51%),
+    linear-gradient(2deg, transparent 49%, #dfdfdf 49%, #dfdfdf 51%, transparent 51%),
+    linear-gradient(-45deg, transparent 49%, #dfdfdf 49%, #dfdfdf 51%, transparent 51%);
+  background-size: 20px 20px, 20px 20px, 20px 20px;
+}
+.price-box button {
+  background-color: #1a3c5f;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+}
+.price{
+  font-size:x-large;
+  font-weight: 500;
+}
+.plan-feature{
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+/*CSS for Best App section*/
+.bestapp-row {
+  position: relative;
+  padding: 120px; 
+  text-align: center;
+  font-family: sans-serif;
+}
+.bestapp-box-string-1{
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 300;
+}
+.bestapp-box-string-2{
+  color: #ffffff;
+  font-size:x-small;
+  font-weight: 300;
+}
+.bestapp-box button{
+  background-color: #ffd700;
+  border: none;
+  padding: 15px 25px;
+  font-size: x-small;
+}
+.bestapp-row::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+  linear-gradient(rgba(26, 60, 95, 0.8), rgba(26, 60, 95, 0.8)),
+  url("notebook.jpg");
+background-size: cover;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.bestapp-box {
+  position: relative; 
+  z-index: 1;
+}
+/*Ending CSS*/
+.column-5 img {
+  width: 25px; 
+  height: auto;            
+}
+.row-5{
+  display: flex;            
+  justify-content: center;
+}
+.end-row{
+  background-color: #252f39;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.adress{
+  font-size: 8px;
+  font-weight: lighter;
+  color: #999999;
+}
