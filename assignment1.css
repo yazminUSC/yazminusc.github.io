@@ -26,87 +26,140 @@ body {
         content: "";
         display: table;
         clear: both;
-        padding-left: 15%;
+        padding-left: 16%;
         padding-right: 15%;
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding-bottom: 7%;
+        font-family: sans-serif;
   }
   .feature {
     float: left;
-    width: 28%; 
+    width: 30%; 
     margin-right: 3%;
     box-sizing: border-box;
   }
   .feature-body{
     color:#999999;
-    font-size: small;
+    font-size: 9px;
+    line-height: 1.8;
+  }
+  .amazing-feature{
+    font-weight: 300;
+    font-size: 11px;
   }
   /*CSS for the nav bar*/
   ul {
-    list-style-type:armenian;
     margin: 0;
     overflow: hidden;
     color:#999999;
-    font-size: small;
+    font-size: x-small;
+    font-weight: lighter;
   }
   li {
     float: right;
     display: block;
-    padding: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 .menu{
     color: #333333;
-    font-size: 1.2em;
+    font-size: .7em;
+    font-weight: 300;
+    padding-left: 55px;
 }
 nav {
+    padding-top: 20px;
+    padding-bottom: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 15%;
+    padding-left: 12%;
     padding-right: 15%;
     font-family: 'Open Sans', sans-serif;
     background-color: #ffffff;
 }
 /*Do not wait section */
-.dontwait-section{
-    background-image: url('lawyer.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 650px;
-    display: flex;
-    align-items: center;
-  }
+.dontwait-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.dontwait-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('lawyer.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(80%);
+  z-index: -1;
+}
+
+.dontwait-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  z-index: 1;
+}
+
+
 .dontwaitstring2{
     color: #ffd700;
+    font-style: italic;
+    font-size: 10px;
+    margin-top: -10px;
+}
+.dontwaitstring1{
+  font-size: 10px;
+  font-weight: 200;
+  padding-bottom: 7px;
 }
 .dontwait-box{
-    background-color: #1a3c5f;
-    width: 20% ;
-    padding: 40px;
-    margin-left: 15%;
-    color: white;
-    max-width: 500px;
+  background-color: #1a3c5f;
+  width: 18%;
+  padding-bottom: 45px;
+  padding-top: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 16%;
+  color: white;
+  max-width: 500px;
+  margin-top: -6%;
 }
-.dontwait-box h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+.improve{
+  font-weight: 300;
+  font-size: 1.7em;
+  margin-top: -21px;
 }
 .dontwait-box p {
     margin-bottom: 20px;
 }
 .dontwait-box input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 16px;
 }
 .dontwait-box button {
     background-color: #ffd700;
     color: #1a3c5f;
     border: none;
     padding: 10px 20px;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 10px;
 }
 /*CSS for testimonial section*/
 .testimonial {
@@ -115,21 +168,22 @@ nav {
     text-align: center;
     padding-left: 15%;
     padding-right: 15%;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 9%;
+    padding-bottom: 9%;
     font-family: sans-serif;
 }
 .testimonial-string{
     font-weight: lighter;
+    font-size: 16px;
 }
 .highlight-signoff{
     font-weight: bold;
     color: #333333; 
 }
 .testimonial-signoff{
-   color:#999999;
-   font-weight: 100;
-   font-size: small;
+  color: #777575;
+  font-weight: 400;
+  font-size: 10px;
 }
 /*Pricing section*/
 .pricing::before {
@@ -156,34 +210,65 @@ nav {
   margin-bottom: 0;
   padding-left: 15%;
 }
+.row{
+  padding-bottom: 25px;
+}
 
 .price-box{
   font-family: sans-serif;
   margin: 0 2%;
-  padding: 50px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 60px;
   background-color: white;
-  background-image: 
-    linear-gradient(0deg, transparent 49%, #dfdfdf 49%, #dfdfdf 51%, transparent 51%),
-    linear-gradient(90deg, transparent 49%, #dfdfdf 49%, #dfdfdf 51%, transparent 51%),
-    linear-gradient(45deg, transparent 49%, #dfdfdf 49%, #dfdfdf 51%, transparent 51%),
-    linear-gradient(88deg, transparent 49%, #dfdfdf 49%, #dfdfdf 51%, transparent 51%),
-    linear-gradient(2deg, transparent 49%, #dfdfdf 49%, #dfdfdf 51%, transparent 51%),
-    linear-gradient(-45deg, transparent 49%, #dfdfdf 49%, #dfdfdf 51%, transparent 51%);
-  background-size: 20px 20px, 20px 20px, 20px 20px;
+  background-image: linear-gradient(0deg, transparent 51%, #dfdfdf 49%, #dfdfdf 51%, transparent 55%),
+   linear-gradient(90deg, transparent 51%, #dfdfdf 30%, #dfdfdf 51%, transparent 52%),
+    linear-gradient(45deg, transparent 52%, #dfdfdf 49%, #dfdfdf 40%, transparent 55%),
+    linear-gradient(-45deg, transparent 52%, #dfdfdf 30%, #dfdfdf 51%, transparent 55%),
+    linear-gradient(2deg, transparent 50%, #dfdfdf 30%, #dfdfdf 51%, transparent 40%);
+  background-size: 15px 15px, 15px 15px, 15px 15px;
 }
 .price-box button {
   background-color: #1a3c5f;
   color: white;
   border: none;
-  padding: 15px 25px;
+  padding: 13px 25px;
+  font-weight: lighter;
+  font-size: 11px;
 }
 .price{
   font-size:x-large;
   font-weight: 500;
+  padding-top: 20px;
+}
+.price.month{
+  margin-top: -40px;
 }
 .plan-feature{
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   font-weight: lighter;
+  font-size: 11px;
+  color:#777575
+}
+.prices-strings{
+  text-align: center;
+  font-family: sans-serif;
+  padding-right: 165px;
+  padding-bottom: 50px;
+  font-weight: lighter;
+}
+.prices-string-2{
+  color: #999999;
+  font-size: 12px;
+}
+.bestapp-box-string-1{
+  font-weight: lighter;
+}
+.plan{
+  font-weight: 300;
+  font-size: 15px;
+  padding-bottom: 10px;
 }
 /*CSS for Best App section*/
 .bestapp-row {
@@ -205,7 +290,7 @@ nav {
 .bestapp-box button{
   background-color: #ffd700;
   border: none;
-  padding: 15px 25px;
+  padding: 12px 25px;
   font-size: x-small;
 }
 .bestapp-row::before {
@@ -236,6 +321,7 @@ background-size: cover;
 .row-5{
   display: flex;            
   justify-content: center;
+  padding-bottom: 25px;
 }
 .end-row{
   background-color: #252f39;
