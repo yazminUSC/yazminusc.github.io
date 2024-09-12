@@ -47,19 +47,23 @@ body {
     font-size: 11px;
   }
   /*CSS for the nav bar*/
-  ul {
-    margin: 0;
-    overflow: hidden;
-    color:#999999;
-    font-size: x-small;
-    font-weight: lighter;
-  }
-  li {
-    float: right;
-    display: block;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
+ul {
+  margin: 0;
+  overflow: hidden;
+  color: #999999;
+  font-size: x-small;
+  font-weight: lighter;
+}
+li {
+  float: right;
+  display: block;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
 .menu{
     color: #333333;
     font-size: .7em;
@@ -98,6 +102,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
+  /*<!-- https://stackoverflow.com/questions/12112746/how-can-i-tint-a-background-image-with-css, (idea/structure made using their structure), Stackoverflow.com */
   background-image: url('lawyer.jpg');
   background-size: cover;
   background-position: center;
@@ -222,6 +227,7 @@ nav {
   padding-right: 50px;
   padding-bottom: 60px;
   background-color: white;
+  /*<!-- https://stackoverflow.com/questions/3540194/how-to-make-a-grid-like-graph-paper-grid-with-just-css, (5 lines made using their structure), Stackoverflow.com */
   background-image: linear-gradient(0deg, transparent 51%, #dfdfdf 49%, #dfdfdf 51%, transparent 55%),
    linear-gradient(90deg, transparent 51%, #dfdfdf 30%, #dfdfdf 51%, transparent 52%),
     linear-gradient(45deg, transparent 52%, #dfdfdf 49%, #dfdfdf 40%, transparent 55%),
